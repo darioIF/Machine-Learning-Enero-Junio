@@ -1,0 +1,29 @@
+en terminal de la pagina:
+
+function ClickConnect() {
+var iconElement = document.getElementById("toggle-header-button");
+if (iconElement) {
+var clickEvent = new MouseEvent ("click", {
+bubbles: true, cancelable: true,
+view: window
+});
+iconElement.dispatchEvent (clickEvent);
+}
+}
+setInterval(ClickConnect, 6000);
+
+>> 12345
+
+para quitar el loop uso el numero entero que me dio y lo paro:
+
+clearInterval(12345);
+
+
+# PARA QUE COMPUTADORA NO SE APAGUE:
+
+Panel de control\Hardware y sonido\Opciones de energía\Editar la configuración del plan
+
+configuración predeterminada: 
+
+3  | 5
+10 | 15
